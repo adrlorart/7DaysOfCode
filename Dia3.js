@@ -1,7 +1,9 @@
-let area = prompt("¿Qué area quieres seguir?, Escribe F para Front-End y B para Back-End");
+function frontend(){
+    const text = document.getElementById('title');
+    text.textContent='Perfecto, elegiste irte por Frontend, ahora elige un lenguaje';
+}
 
-if (area=='F'){
-    let aprender = prompt("¿Quieres aprender React o Vue?, Escribe R para React y V para Vue");
-}else{
-    let aprender = prompt("¿Quieres aprender C# o Java?, Escribe C# para C# y J para Java");
+function backend(){
+    const text = document.getElementById('title');
+    text.textContent='Perfecto, elegiste irte por Backend, ahora elige un lenguaje';
 }
