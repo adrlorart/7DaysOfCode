@@ -8,9 +8,29 @@
 <body>
     <h1 id='title' class="main-title">¿Qué área quieres seguir?</h1>
      <script src=Dia3.js></script> 
-     <section>
+
+     <section id="opciones">
         <button class="btn_frontend" onclick="frontend()">Frontend</button>
         <button class="btn_backend" onclick="backend()">Backend</button>
+     </section>
+
+     <section id="front-opciones" style="display: none;">
+        <button class="react" onclick="react()">React</button>
+        <button class="vue" onclick="vue()">Vue</button>
+     </section>
+
+     <section id="back-opciones" style="display: none;">
+        <button class="c" onclick="c()">C#</button>
+        <button class="java" onclick="java()">Java</button>
+     </section>
+
+     <section id="gen-opciones" style="display: none;">
+        <button class="especial" onclick="especial()">Especializarme en el área que elegi</button>
+        <button class="fullstack" onclick="fullstack()">Desarrollarme para convertirme en FullStack</button>
+     </section>
+
+     <section id="tecnologias">
+        
      </section>
 </body>
 </html>
