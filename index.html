@@ -25,11 +25,18 @@
      </section>
 
      <section id="gen-opciones" style="display: none;">
-        <button class="especial" onclick="especial()">Especializarme en el área que elegi</button>
-        <button class="fullstack" onclick="fullstack()">Desarrollarme para convertirme en FullStack</button>
+        <button class="especial" onclick="indistinto()">Especializarme en el área que elegi</button>
+        <button class="fullstack" onclick="indistinto()">Desarrollarme para convertirme en FullStack</button>
      </section>
 
-     <section id="tecnologias">
+     <section id="tecnologias" style="display: none;">
+        <div class="input-tecnologias">
+            <input type="text" id="texto" class="input" placeholder="Escribe la tecnología">
+            <button class="btn-add" onclick="agregarTecnologia()">Añadir</button>
+            <button class="btn-all" onclick="all()">Listo</button>
+        </div>
+
+        <ul id="listaTecnologias" class="tec-list" aria-labelledby="listaTecnologias" role="list"></ul>
         
      </section>
 </body>

@@ -41,6 +41,34 @@ function java(){
     document.getElementById('gen-opciones').style.display = 'block';
 }
 
+function indistinto(){
+    const text = document.getElementById('title');
+    text.textContent='¿En qué tecnologías te gustaría especializarte o conocer?';
+    document.getElementById('gen-opciones').style.display ='none';
+    document.getElementById('tecnologias').style.display='block';
+}
 
 
-let listLengFront = []; 
+function agregarTecnologia(){
+    if ((document.getElementById("texto").value) == ''){
+        alert("Por favor, inserte un nombre");
+    }else{
+        listaTecnologia.push(document.getElementById("texto").value);
+        limpiar();
+        listaEnPantalla();
+    }
+}
+
+function limpiar(){
+    document.querySelector('#texto').value = '';
+}
+
+function listaEnPantalla(){
+    let listHTML = document.getElementById("listaTecnologias");
+    listHTML.innerHTML = "";
+    for (let index = 0; index < listaTecnologia.length; index++) {
+        listHTML.innerHTML += `<li>${listaTecnologia[index]}</li>`;
+    }
+}
+
+let listaTecnologia = []; 
