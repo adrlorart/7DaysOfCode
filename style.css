@@ -14,6 +14,7 @@
     font-weight: 900;
     font-style: normal;
     color: var(--color-white);
+    height: 30vh;
     
 }
 
@@ -52,6 +53,7 @@ button {
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    
 }
 
 .button_add:hover {
